@@ -58,11 +58,11 @@ content button:hover {
 
 #hero-container h1 {
   font-size: 4rem;
-  line-height: 90%;
+  line-height: 110%;
   color: var(--primary);
 }
 
-#hero-container h1 span {
+#hero-container .header-color {
   color: var(--secondary);
 }
 
