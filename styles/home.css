@@ -1,0 +1,88 @@
+main {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  height: 100%;
+  width: 40%;
+
+  background-image: url('/assets/profile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+content button {
+  width: 6rem;
+  height: 2rem;
+
+  background: transparent;
+  border: 1px solid var(--gray);
+  border-radius: 20px;
+
+  color: var(--gray);
+
+  transition: all 0.5s;
+}
+
+content button:hover {
+  background: var(--secondary);
+  color: var(--background);
+  border: none;
+  transform: scale(1.05);
+}
+
+content {
+  height: 100%;
+  width: 60%;
+
+  padding: 2rem;
+  padding-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#hero-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
+#hero-container h1 {
+  font-size: 4rem;
+  line-height: 90%;
+  color: var(--primary);
+}
+
+#hero-container h1 span {
+  color: var(--secondary);
+}
+
+footer {
+  color: var(--gray);
+
+  align-self: flex-end;
+
+  width: 40%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  transition: all 0.3s;
+}
+
+footer a:hover {
+  color: var(--secondary);
+  transform: scale(1.05); 
+}
