@@ -5,8 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Developer Portfolio</title>
+  
+  <!-- Lib CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- CSS -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/colors.css">
   <link rel="stylesheet" href="styles/home.css">
@@ -18,22 +21,23 @@
 
 </head>
 <body>
+  <main >
   <main>
     <aside></aside>
 
     <content>
       <div id="hero-container">
-        <button>
+        <button data-aos="fade-down" data-aos-duration="1000" data-aos-delay="700">
           <a href="#" target="_blank" rel="noopener noreferrer">
             Portifólio
           </a>
         </button>
 
-        <h1>
+        <h1 data-aos="fade-right" data-aos-duration="1000">
           Designer Graphich <br />
           & Front End Developer 
           <br />
-          <span>💻 Freelancer, located
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">💻 Freelancer, located
           in Brazil.️</span>
         </h1>
       </div>
@@ -45,5 +49,11 @@
       </footer>
     </content>
   </main>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>
